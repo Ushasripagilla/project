@@ -1,0 +1,64 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-buttons button:hover {
+    background-color: #555;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-item {
+    display: none;
+    width: 30%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+}
+
+.photo-item.active {
+    display: block;
+}
