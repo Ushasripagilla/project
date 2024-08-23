@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Photo Gallery</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="filter-buttons">
+            <button onclick="filterPhotos('all')">All</button>
+            <button onclick="filterPhotos('nature')">Nature</button>
+            <button onclick="filterPhotos('architecture')">Architecture</button>
+            <button onclick="filterPhotos('animals')">Animals</button>
+        </div>
+
+        <div class="photo-gallery">
+            <div class="photo-item nature">
+                <img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=600&quality=80.jpg" alt="Nature Photo 1">
+            </div>
+            <div class="photo-item architecture">
+                <img src="https://t4.ftcdn.net/jpg/02/31/69/05/360_F_231690594_1xpuGVGkzsPIvIVRyRkGLY5Ze11d3yev.jpg" alt="Architecture Photo 1">
+            </div>
+            <div class="photo-item animals">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgrMXODUOENyEMPL1eSoNEFZslSXUpUsDLA&s.jpg" alt="Animals Photo 1">
+            </div>
+            <div class="photo-item nature">
+                <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.jpg?s=612x612&w=0&k=20&c=i4HYO7xhao7CkGy7Zc_8XSNX_iqG0vAwNsrH1ERmw2Q=".jpg" alt="Nature Photo 2">
+            </div>
+            <div class="photo-item architecture">
+                <img src="https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1.jpg" alt="Architecture Photo 2">
+            </div>
+            <!-- Add more photos as needed -->
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
